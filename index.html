@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/index.css">
+  <link rel="stylesheet" href="./vendor/hint.css-2.7.0/hint.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+<body class="bg-cream">
+
+  <main>
+    <section class="w-full h-screen flex items-center px-5">
+      <div
+        class="card xl:w-10/12 w-[350px] max-w-[800px] h-auto min-h-10/12 mx-auto flex flex-col xl:flex-row flex-wrap justify-center items-center bg-white rounded-lg">
+        <div class="image w-full xl:w-1/2 h-[300px] xl:h-full rounded-tl-lg">
+          <picture>
+            <source srcset="./images/image-product-desktop.jpg" media="(min-width: 1280px)">
+            <source srcset="./images/image-product-mobile.jpg" media="(min-width: 375px)">
+            <img src="./images/image-product-desktop.jpg" alt="A bottle of a CHANEL perfume"
+              class=" w-full h-full object-cover rounded-tl-lg rounded-tr-lg xl:rounded-tr-none xl:rounded-tl-lg xl:rounded-bl-lg">
+          </picture>
+        </div>
+        <div
+          class="content w-full xl:w-1/2 py-5 xl:py-0 px-5 xl:px-10 flex flex-col items-start justify-center h-1/2 xl:h-full">
+          <p class="mb-3 xl:mb-5 tracking-[5px] text-grayish_blue">PERFUME</p>
+          <h1 class="font-serif text-[35px] leading-[40px] xl:text-5xl mb-4">Gabrielle Essence Eau Du Parfum</h1>
+          <p class="text-grayish_blue leading-7 text-[14px]">A floral, solar and voluptuous interpretation composed by
+            Olivier Polge, Perfumer-Creator for the House of
+            CHANEL.</p>
+          <div class="price flex items-center gap-3 mt-5 xl:mt-10">
+            <h2 class="font-serif text-3xl xl:text-5xl text-dark_cyan hover:cursor-wait hint--top"
+              data-hint="Limited Time!">$149.99</h2>
+            <del class=" text-grayish_blue">169.99<span class="sr-only">The previous price was 169.99</span></del>
+          </div>
+          <button
+            class="text-white text-sm xl:text-lg font-bold py-3 xl:p-5 w-full bg-dark_cyan rounded-lg mt-5 xl:mt-10 flex items-center justify-center gap-3 hover:cursor-pointer hover:bg-darker_cyan transition">
+            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF" />
+            </svg>
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution bg-slate-300 py-3 text-blue_very flex justify-center mt-20">
+      <p>
+        Challenge by <a class="font-bold" href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend
+          Mentor</a>.
+        Coded by <a class="font-bold" href="#">Marco Del Riego</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
